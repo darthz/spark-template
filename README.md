@@ -14,11 +14,13 @@ Este repositório é um template para iniciar projetos de Engenharia de Dados ut
 │       └── s3_handler.py
 ```
 
+
 ## Principais Recursos
 
 - **PySpark 3.5.5**: Framework de processamento distribuído.
 - **S3 OVH**: Armazenamento de dados, com funções para upload padronizado.
 - **PostgreSQL**: Banco de dados relacional para destino dos dados.
+- **Driver JDBC PostgreSQL**: Necessário para integração Spark ↔ PostgreSQL. Baixe em: https://repo1.maven.org/maven2/org/postgresql/postgresql/42.7.2/
 - **Loguru & tqdm**: Logging colorido e barra de progresso em pipelines.
 - **Docker**: Ambiente isolado e reprodutível.
 
