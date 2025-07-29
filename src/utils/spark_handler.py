@@ -38,6 +38,10 @@ def get_spark_session():
     conf.set("spark.sql.execution.arrow.pyspark.enabled", "true")
     conf.set("spark.sql.repl.eagerEval.enabled", "true")
     conf.set("spark.sql.repl.eagerEval.truncate", 100)
+    conf.set("spark.sql.parquet.compression.codec", "snappy")
+    conf.set("spark.sql.csv.compression.codec", "gzip")
+    
+    conf.set("spark.jars", "/home/shared/drivers/postgresql-42.7.2.jar")
 
     spark = SparkSession.builder.config(conf=conf).getOrCreate()
 
